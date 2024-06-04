@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contact-container">
+
+        <form class="contact-left" action="https://api.web3forms.com/submit" method="POST">
+            <div class="contact-left-title">
+                <h2>Get In Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="f2522bd0-47ad-4e21-afda-aba6473a736c">
+            <input type="text" name="name" class="contact-input" placeholder="Your name" required>
+            <input type="email" name="email" class="contact-input" placeholder="Your email" required>
+            <textarea name="message" rows="4" cols="50" class="contact-input" placeholder="Your message"
+                required></textarea>
+            <button class="btn" type="submit">Submit <img src="assests/arrow_icon.png"></button>
+
+            <button class="btn " type="button" onclick="loadAnotherPage()">Home</button>
+        </form>
+        <div class="contact-right">
+            <img src="assests/right_img.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        function loadAnotherPage() {
+            window.location.href = 'thanks.html';
+        }
+    </script>
+
+</body>
+
+</html>
